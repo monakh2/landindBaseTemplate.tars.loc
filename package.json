@@ -1,0 +1,26 @@
+{
+  "name": "kutianin",
+  "version": "1.0.0",
+  "description": "One page site",
+  "main": "gulpfile.js",
+  "directories": {},
+  "dependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "handlebars-helpers": "^0.10.0"
+  },
+  "devDependencies": {
+    "breakpoints-js": "^1.0.6",
+    "cssnano": "^4.1.10",
+    "gulp": "^3.9.1",
+    "rucksack-css": "^1.0.2",
+    "sass-bem-mixins": "^1.1.6",
+    "sass-mediaqueries": "^1.6.1",
+    "scut": "^1.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kostiantyn Monastyrskiy",
+  "license": "ISC"
+}

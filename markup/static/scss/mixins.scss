@@ -1,0 +1,101 @@
+// Mixins.
+
+@mixin nl {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    list-style: none;
+    list-style-position: outside;
+    }
+
+@mixin cf {
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+        }
+
+    &:after {
+        clear: both;
+        }
+
+    .lt-ie8 & {
+        zoom: 1;
+        }
+    }
+
+@mixin blocks-justify {
+    text-align: justify;
+    text-justify: newspaper;
+    }
+
+// You can add your own mixins here:
+//Intermediate function for obtaining the value of map
+@function config($map, $key) {
+    @if map_has_key($map, $key) {
+        @return map-get($map, $key);
+        } @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$key}`. "
+         + "Please make sure it is defined in `#{$map}` map.";
+        }
+    }
+
+//Function that returns a value of map breakpoints
+@function breakpoints($request) {
+    @return config($_breakpoints, $request);
+    }
+/*Background gradient*/
+@mixin gradient($start-color, $end-color, $orientation) {
+    background: $start-color;
+    @if $orientation == 'vertical' {
+        background: -webkit-linear-gradient(top, $start-color, $end-color);
+        background: linear-gradient(to bottom, $start-color, $end-color);
+        } @else if $orientation == 'horizontal' {
+        background: -webkit-linear-gradient(left, $start-color, $end-color);
+        background: linear-gradient(to right, $start-color, $end-color);
+        } @else {
+        background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
+        background: radial-gradient(ellipse at center, $start-color, $end-color);
+        }
+    }
+/*Triangle mixin*/
+@mixin css-triangle($direction, $color, $hypotenuse, $height) {
+    // Base styles for all triangles
+    border-style: solid;
+    height: 0;
+    width: 0;
+    // Cardinal Directions - can't be scalene this way
+    @if($direction == 'top') {
+        border-color: transparent transparent $color transparent;
+        border-width: 0 ($height/2) $hypotenuse ($height/2);
+        }
+    @if ($direction == 'bottom') {
+        border-color: $color transparent transparent transparent;
+        border-width: $hypotenuse ($height/2) 0 ($height/2);
+        }
+    @if ($direction == 'right') {
+        border-color: transparent transparent transparent $color;
+        border-width: ($hypotenuse/2) 0 ($hypotenuse/2) $height;
+        }
+    @if ($direction == 'left') {
+        border-color: transparent $color transparent transparent;
+        border-width: ($hypotenuse/2) $height ($hypotenuse/2) 0;
+        }
+    // Ordinal Directions - can be scalene this way!
+    @if ($direction == 'top-left') {
+        border-color: $color transparent transparent transparent;
+        border-width: $hypotenuse $height 0 0;
+        }
+    @if ($direction == 'top-right') {
+        border-color: transparent $color transparent transparent;
+        border-width: 0 $height $hypotenuse 0;
+        }
+    @if ($direction == 'bottom-left') {
+        border-color: transparent transparent transparent $color;
+        border-width: $hypotenuse 0 0 $height;
+        }
+    @if ($direction == 'bottom-right') {
+        border-color: transparent transparent $color transparent;
+        border-width: 0 0 $hypotenuse $height;
+        }
+    }
