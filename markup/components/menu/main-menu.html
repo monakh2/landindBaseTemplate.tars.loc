@@ -1,0 +1,21 @@
+<div class="main-menu"> <!-- Start Menu Area -->
+	<div class="navbar">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				{{#repeat 3}}
+				<span class="icon-bar"></span>
+				{{/repeat}}
+			</button>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				{{#each menu.main}}
+				<li>
+					<a class="smoth-scroll" href="#{{this}}">{{capitalize this}}</a>
+				</li>
+				{{/each}}
+			</ul>
+		</div>
+	</div>
+</div> <!--/End Menu Area -->

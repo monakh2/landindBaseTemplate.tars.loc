@@ -1,0 +1,35 @@
+<!--====================================================================
+						Start About Section
+=====================================================================-->
+<section class="about-area ptb-1" id="about">
+	<div class="container">
+		{{>elements/section-header elements.sectionHeaders.about}}
+		<div class="row">
+			<div class="col-md-6 col-sm-12">
+				<div class="about-img">
+					<img src="%=static=%img/assets/about/about.jpg" alt="about-image">
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="row">
+					{{#each about.aboutItems}}
+					<div class="col-md-6 col-sm-6">
+						<div class="single-about-item text-center">
+							<div class="about-icon">
+								<i class="{{this.icon}}"></i>
+							</div>
+							<h3>{{this.title}}</h3>
+							<p>{{this.text}}</p>
+						</div>
+					</div><!-- /End single about item -->
+					{{/each}}
+
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section> <!--/section -->
+<!--====================================================================
+						End	About Section
+=====================================================================-->

@@ -1,0 +1,43 @@
+<!--====================================================================
+						Start Expertice Section
+=====================================================================-->
+<section class="expertise-area ptb-1">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+				<div class="section-top text-center pb-1">
+					<h2>other expertise</h2>
+					<p>Lorem ipsum dolor Ipsam eveniet quam architecto, aspernatur !</p>
+				</div>
+			</div>
+		</div> <!--/End Section Top-->
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row">
+					{{#each expertice.experticeList}}
+					<div class="col-md-6 col-sm-6">
+						<div class="single-expertise-item">
+							<div class="expertise-icon">
+								<i class="{{this.icon}}"></i>
+							</div>
+							<div class="expertise-content">
+								<h3>{{this.title}}</h3>
+								<p>{{this.text}}</p>
+							</div>
+						</div>
+					</div>
+					{{/each}}
+				</div>
+				<a class="btn5" href="#">learn more</a>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="expertise-img">
+					<img src="%=static=%img/assets/expertice/expertise.jpg" alt="expertise-image">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====================================================================
+						End Expertice Section
+=====================================================================-->

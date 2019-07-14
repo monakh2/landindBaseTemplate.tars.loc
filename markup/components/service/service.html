@@ -1,0 +1,24 @@
+<!--====================================================================
+						Start Service Section
+=====================================================================-->
+<section class="service-area ptb-1" id="service">
+	<div class="container">
+		{{>elements/section-header elements.sectionHeaders.service}}
+		<div class="row">
+			{{#each service.serviceList}}
+			<div class="col-md-4 col-sm-6">
+				<div class="single-service-item text-center">
+					<div class="service-item-icon">
+						<i class="{{this.icon}}"></i>
+					</div>
+					<h3>{{this.title}}</h3>
+					<p>{{this.text}}</p>
+				</div>
+			</div> <!--/End Sungle service item -->
+			{{/each}}
+		</div>
+	</div>
+</section>
+<!--====================================================================
+						End	Service Section
+=====================================================================-->

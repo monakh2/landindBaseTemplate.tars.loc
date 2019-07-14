@@ -1,0 +1,38 @@
+<!--====================================================================
+						Start portfolio Section
+=====================================================================-->
+<section class="portfolio-area ptb-1" id="portfolio">
+	<div class="container">
+		{{>elements/section-header elements.sectionHeaders.portfolio}}
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<ul class="portfolio-menu text-center">
+					{{#each portfolio.menu}}
+					<li class="{{#if this.active}}active{{/if}}" data-filter="{{this.filter}}" data-toggle="tooltip" data-placement="top" title="{{this.count}}">
+						{{this.text}}</li>
+					{{/each}}
+				</ul>
+			</div>
+		</div> <!--/End portfolio menu-->
+		<div class="row portfolio-project">
+			{{#each portfolio.portfolioList}}
+			<div class="col-md-4 col-sm-6 {{this.filter}}">
+				<div class="portfolio-item">
+					<a href="%=static=%img/assets/portfolio/{{this.img}}" class="image-popup">
+						<img src="%=static=%img/assets/portfolio/{{this.img}}" alt="{{this.imgAlt}}">
+						<div class="overlay">
+							<div class="portfolio-item-caption">
+								<h6>{{this.title}}</h6>
+								<span>{{this.text}}</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div><!-- /end single portfolio item -->
+			{{/each}}
+		</div>
+	</div>
+</section>
+<!--====================================================================
+						End	portfolio Section
+=====================================================================-->

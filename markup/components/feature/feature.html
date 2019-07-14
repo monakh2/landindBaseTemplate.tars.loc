@@ -1,0 +1,27 @@
+<section class="feature-area ptb-1 bg-1">
+	<div class="container">
+		{{>elements/section-header elements.sectionHeaders.feature}}
+		<div class="row">
+			<div class="col-md-6 col-sm-12">
+				<div class="feature-content">
+					{{#each feature.featureList}}
+					<div class="single-feature-item">
+						<div class="feature-icon">
+							<i class="{{this.icon}}"></i>
+						</div>
+						<div class="single-feature-content">
+							<a href="#"><h3>{{this.title}}</h3></a>
+							<p>{{this.text}}</p>
+						</div>
+					</div><!-- /Single feature item -->
+					{{/each}}
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="feature-img">
+					<img src="%=static=%img/assets/feature/feature.jpg" alt="feature-image">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

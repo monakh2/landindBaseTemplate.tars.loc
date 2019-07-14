@@ -1,0 +1,28 @@
+<!-- ===================================================================
+						Start Testimonial Section
+=====================================================================-->
+<section class="testimonial-area ptb-1">
+	<div class="overlay1"></div>
+	<div class="container">
+		{{>elements/section-header elements.sectionHeaders.testimonial}}
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+				<div class="client-say text-center owl-carousel">
+					{{#each testimonial.clients}}
+					<div class="client-single-item">
+						<p class="white">
+							<i class="fa fa-quote-left"></i>{{this.text}}<i class="fa fa-quote-right"></i></p>
+						<div class="client-img">
+							<img src="%=static=%img/assets/testimonial/{{this.img}}" alt="{{this.imgAlt}}">
+						</div>
+						<span>{{this.nameCompany}}</span>
+					</div> <!-- End single client item -->
+					{{/each}}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ===================================================================
+						End Testimonial Section
+=====================================================================-->

@@ -1,0 +1,35 @@
+<!-- ===================================================================
+						Start Partner Section
+=====================================================================-->
+<section class="blog-area ptb-1 bg-1" id="blog">
+	<div class="container">
+		{{>elements/section-header elements.sectionHeaders.blog}}
+		<div class="row">
+			{{#each blog.posts}}
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<div class="single-post-item">
+					<div class="blog-img">
+						<a href="{{this.href}}" target="-blank"><img src="%=static=%img/assets/blog/{{this.img}}" alt="{{this.imgAlt}}"></a>
+					</div>
+					<div class="blog-meta">
+						{{#each ../blog.postMeta}}
+						<span class="{{this.class}}">
+                                {{#if href}}<a href="{{this.href}}">{{/if}}
+                                    <i class="{{this.icon}}"></i>
+                                    {{this.val}}
+                                {{#if href}}</a>{{/if}}
+                            </span>
+						{{/each}}
+					</div>
+					<a href="{{this.href}}" target="-blank"><h5>{{this.postTitle}}</h5></a>
+					<p>{{this.text}}</p>
+					<a class="read-more" href="blog.html" target="-blank">read more</a>
+				</div>
+			</div><!--/End single post-->
+			{{/each}}
+		</div>
+	</div>
+</section>
+<!-- ===================================================================
+						End Partner Section
+=====================================================================-->

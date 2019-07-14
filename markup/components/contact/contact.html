@@ -1,0 +1,77 @@
+<!-- ===================================================================
+						Start Contact Section
+=====================================================================-->
+<section class="contact-area ptb-1" id="contact">
+	<div class="container">
+		{{>elements/section-header elements.sectionHeaders.contact}}
+		<div class="row">
+			<div class="col-md-7 col-sm-6 col-xs 12">
+				<div class="contact-field-area">
+					<form id="ajax-contact" action="mail.php" method="post">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-6">
+								<div class="single-contact-field">
+									<input type="text"  name="name" class="text-field" id="name" placeholder="Name" required>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-6">
+								<div class="single-contact-field">
+									<input type="email"  name="email" class="text-field" id="email" placeholder="Email" required>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12">
+								<div class="single-contact-field">
+									<input type="text"  name="subject" class="text-field" id="subject" placeholder="Subject">
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12">
+								<div class="single-contact-field">
+									<textarea name="msg" id="msg" placeholder="Message"></textarea>
+								</div>
+								<input type="submit" name="submit" value="send message" id="submitButton" class="btn3" data-text="Send Message">
+							</div>
+						</div>
+						<div id="form-messages"></div>
+					</form>
+				</div>
+			</div>
+			<div class="col-md-5 col-sm-6 col-xs-12">
+				<div class="contact-info">
+					<h3>If you got any question, please do not hesitate to send us a message. we reply within 24 hours</h3>
+					<ul>
+						<li>
+							<div class="contact-icon">
+								<i class="fa fa-mobile"></i>
+							</div>
+							<div class="info-text">
+								<strong>Phone:</strong><br>02 9635 0247
+								<br>02 9635 0247
+							</div>
+						</li>
+						<li>
+							<div class="contact-icon">
+								<i class="fa fa-map-marker"></i>
+							</div>
+							<div class="info-text">
+								<strong>Adderss:</strong><br>12-A Nowhere Lane,USA
+								<br>12-A Nowhere Lane,USA
+							</div>
+						</li>
+						<li>
+							<div class="contact-icon">
+								<i class="fa fa-envelope-o"></i>
+							</div>
+							<div class="info-text">
+								<strong>Email:</strong><br>info@yourdomain.com
+								<br>info@yourdomain.com
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ===================================================================
+						End Contact Section
+=====================================================================-->

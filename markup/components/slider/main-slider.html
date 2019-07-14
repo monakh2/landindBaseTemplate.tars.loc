@@ -1,0 +1,20 @@
+<!--====================================================================
+						Start Slider Section
+=====================================================================-->
+<section class="slider-area">
+	<div class="camera_wrap main-slider">
+		{{#each slider.main}}
+		<div data-thumb="%=static=%img/assets/slider/{{this.img}}" data-src="%=static=%img/assets/slider/{{this.img}}">
+			<div class="camera_caption text-center">
+				<h5 class="fadeInUp animated">Welcome to our company</h5>
+				<h1 class="fadeInDown animated">{{this.text}}</h1>
+				<a href="#about" class="btn1 fadeInLeft animated">About Us</a>
+				<a href="#contact" class="btn2 fadeInRight animated">contact us</a>
+			</div>
+		</div>
+		{{/each}}
+	</div><!-- #camera_wrap_1 -->
+</section>
+<!--====================================================================
+						End	Slider Section
+=====================================================================-->

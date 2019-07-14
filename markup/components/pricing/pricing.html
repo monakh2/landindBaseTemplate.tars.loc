@@ -1,0 +1,31 @@
+<!--====================================================================
+						Start Pricing Section
+=====================================================================-->
+<section class="pricing-area bg-1 ptb-1">
+	<div class="container">
+		{{>elements/section-header elements.sectionHeaders.pricing}}
+		<div class="row">
+			{{#each pricing.tariffPlans}}
+			<div class="col-md-3 col-sm-6">
+				<div class="pricing-table text-center">
+					<div class="pricing-top">
+						<h4>{{this.title}}</h4>
+						<div class="pricing-cost">
+							<span>{{this.sum}}<sub>/mon</sub></span>
+						</div>
+					</div><!--/End Price Top-->
+					<ul>
+						{{#each ../pricing.list}}
+						<li>{{this}}</li>
+						{{/each}}
+					</ul>
+					<a class="btn4" href="#">order now</a>
+				</div>
+			</div> <!-- /End Single Pricing Table -->
+			{{/each}}
+		</div>
+	</div>
+</section>
+<!--====================================================================
+						End Pricing Section
+=====================================================================-->

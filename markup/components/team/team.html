@@ -1,0 +1,31 @@
+<!--====================================================================
+						Start team Section
+=====================================================================-->
+<section class="team-area ptb-1 bg-1">
+	<div class="container">
+		{{>elements/section-header elements.sectionHeaders.team}}
+		<div class="row">
+			<div class="col-md-12">
+				<div class="team-slider owl-carousel">
+					{{#each team.teamList}}
+					<div class="team-member">
+						<img src="%=static=%img/assets/team/{{this.img}}" alt="{{this.imgAlt}}">
+						<div class="member-info text-center">
+							<h3>{{this.name}}</h3>
+							<h6>{{this.position}}</h6>
+							<div class="member-social-link">
+								{{#each ../team.socialNetwork}}
+								<a href="#"><i class="{{this}}"></i></a>
+								{{/each}}
+							</div>
+						</div>
+					</div> <!-- /end single team member -->
+					{{/each}}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====================================================================
+						End team Section
+=====================================================================-->

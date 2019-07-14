@@ -1,32 +1,37 @@
 <!doctype html>
 <html class="no-js" lang="ru">
 
-    <head>
-        {{> head/head head.defaults}}
-    </head>
+<head>
+	{{> head/head head.defaults}}
+</head>
 
-    <body class="page">
-        %=symbols=%
+<body data-spy="scroll" data-target=".header-area" data-offset="50" id="home" class="page">
+%=symbols=%
+{{> elements/preloader/preloader}}
+{{> header/header}}
+{{> slider/main-slider}}
+{{> about/about}}
+{{> feature/feature	}}
+{{> service/service}}
+{{> facts/facts}}
+{{> portfolio/portfolio}}
+{{> pricing/pricing}}
+{{> expertice/expertice}}
+{{> team/team}}
+{{> overview/overview}}
+{{> testimonial/testimonial}}
+{{> holder/holder}}
+{{> partner/partner}}
+{{> blog/blog}}
+{{> contact/contact}}
+{{> footer/footer}}
 
-        <section class="page__wrapper">
+{{> old/old_footer_js}}
+<script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+<script>svg4everybody();</script>
 
-            <!-- Include your modules here -->
-
-            {{> example/example}}
-
-            <div class="page__buffer"></div>
-
-        </section>
-
-        <footer class="page__footer">
-            {{> footer/footer}}
-        </footer>
-
-        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
-        <script>svg4everybody();</script>
-
-        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
-        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
-    </body>
+<!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+<script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+</body>
 
 </html>

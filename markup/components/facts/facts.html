@@ -1,0 +1,24 @@
+<!--====================================================================
+						Start Facts Section
+=====================================================================-->
+<section class="facts-area ptb-1">
+	<div class="overlay1"></div>
+	<div class="container">
+		<div class="row">
+			{{#each facts.factsList}}
+			<div class="col-md-3 col-sm-3 col-xs-6">
+				<div class="single-facts-item text-center">
+					<div class="facts-icon">
+						<i class="{{this.icon}}"></i>
+					</div>
+					<span class="counter">{{this.counter}}</span>
+					<h6>{{this.title}}</h6>
+				</div>
+			</div> <!-- /end single fact-item -->
+			{{/each}}
+		</div>
+	</div>
+</section>
+<!--====================================================================
+						End	Facts Section
+=====================================================================-->
