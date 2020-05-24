@@ -1,0 +1,122 @@
+@keyframes spin {
+   20%, 100% {
+        transform: rotate(1turn);
+    }
+}
+
+.site-dev {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .site-dev_title {
+        font-family: 'blogger_sans-medium', 'Arial', sans-serif;
+    }
+}
+
+.dev-btn {
+    $color: #F4690E;
+    $border-width: 1px;
+    //$logo-width: 64px;
+    //$logo-width: 50px;
+    $logo-width: 40px;
+
+    margin: 15px;
+    display: inline-block;
+    overflow: hidden;
+    height: $logo-width + 10px;
+    width: $logo-width;
+    animation: spin 5s linear infinite;
+    &:hover {
+        animation-play-state: paused;
+    }
+
+
+    .dev-btn__img {
+        @include radial-gradient(rgba(#FFF, .3), $color, 75%);
+
+        position: relative;
+        //top: -5px;
+        //top: -2px;
+        top: -3px;
+        fill: white;
+        height: $logo-width - 10px;
+        width: $logo-width - 10px;
+    }
+
+    .dev-btn__inner {
+        box-sizing: border-box;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        z-index: 0;
+        line-height: ($logo-width / 2) + 5px;
+        font-size: ($logo-width / 2) + 5px;
+        //margin: 18.5px 0;
+        //margin: 14.5px 0;
+        margin: 11.5px 0;
+        height: ($logo-width / 2) + 5px;
+        width: $logo-width;
+        transition: all .25s ease;
+        border-left: $border-width solid $color;
+        border-right: $border-width solid $color;
+        background: $color;
+        color: #FFF;
+
+        &:after,
+        &:before {
+            box-sizing: content-box;
+            position: absolute;
+            content: '';
+            left: -($border-width);
+            top: 0;
+            z-index: -1;
+            width: inherit;
+            height: inherit;
+            transition: inherit;
+            border-left: inherit;
+            border-right: inherit;
+            background: inherit;
+            color: inherit;
+        }
+
+        &:before {
+            transform: rotate(60deg);
+        }
+
+        &:after {
+            transform: rotate(-60deg);
+        }
+
+        &:hover {
+
+            background: 0 0;
+            border-color: $color;
+            color: $color;
+
+            &:after,
+            &:before {
+                background: inherit;
+                color: inherit;
+                border-color: inherit;
+            }
+
+            .dev-btn__img {
+
+                fill: $color;
+                background: transparent;
+            }
+        }
+
+        &.dev-btn__inner_spin {
+            transition: transform .25s ease;
+
+            &:hover {
+                transform: rotate(1turn);
+            }
+        }
+    }
+}
+
+
+

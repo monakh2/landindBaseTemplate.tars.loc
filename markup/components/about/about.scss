@@ -1,1 +1,51 @@
-
+/*----------------------------------------------------------------
+                        Start About Section
+----------------------------------------------------------------*/
+.about-area {
+  padding-bottom: 73px;
+  }
+.section-top{
+  margin: 0 auto;
+  max-width: 450px;
+  }
+.section-top h3 {
+  color: #3E6482;
+  font-weight: 600;
+  }
+.about-img > img {
+  width: 100%;
+  }
+.single-about-item {
+  padding: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+.about-icon i {
+  color: #3E6482;
+  font-size: 70px;
+  transform: translateY(50%);
+  }
+.single-about-item h3 {
+  transform: translateY(160%);
+  }
+.single-about-item p {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50%);
+  }
+.single-about-item:hover.single-about-item p {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  }
+.single-about-item:hover .about-icon i {
+  transform: translateY(0);
+  }
+.single-about-item:hover.single-about-item h3 {
+  transform: translateY(0);
+  }
+/*----------------------------------------------------------------
+                        End About Section
+----------------------------------------------------------------*/

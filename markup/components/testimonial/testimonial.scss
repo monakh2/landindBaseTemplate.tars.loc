@@ -1,1 +1,40 @@
-
+/*----------------------------------------------------------------
+                        Start Testimonial section
+----------------------------------------------------------------*/
+.testimonial-area {
+  background: url(%=static=%assets/testimonial/client-bg.jpg) no-repeat fixed;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 83px;
+  background-position: 50% 50%;
+  }
+.client-img > img {
+  margin-top: 20px;
+  border: 8px solid #3E6482;
+  border-radius: 50%;
+  }
+.client-say h5 {
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+  padding-top: 15px;
+  text-transform: capitalize;
+  }
+.white i {
+  font-size: 15px;
+  padding: 0 8px;
+  }
+.client-single-item > span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 50px;
+  line-height: 40px;
+  }
+.testimonial-area .client-img img {
+  width: auto;
+  display: inline-block;
+  }
+/*----------------------------------------------------------------
+                        End Testimonial section
+----------------------------------------------------------------*/

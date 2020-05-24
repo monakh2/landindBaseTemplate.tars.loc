@@ -1,0 +1,43 @@
+/*----------------------------------------------------------------
+                        Start Footer Section
+----------------------------------------------------------------*/
+footer.footer-area {
+  padding-top: 83px;
+  padding-bottom: 89px;
+  }
+.footer-logo > a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: capitalize;
+  }
+.ftr-social-link {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  }
+.ftr-social-link li {
+  display: inline-block;
+  }
+.ftr-social-link li a i {
+  background: #fff;
+  color: #3E6482;
+  display: block;
+  font-size: 20px;
+  height: 35px;
+  line-height: 35px;
+  width: 35px;
+  margin-right: 10px;
+  border-radius: 50%;
+  }
+.ftr-social-link li:hover a i {
+  transform: translateY(-10px);
+  }
+.copy-right > p {
+  color: #fff;
+  }
+/*-------------Scroll To Top-------------*/
+@import "../elements/_scroll-top.scss";
+/*----------------------------------------------------------------
+                        End Footer Section
+----------------------------------------------------------------*/

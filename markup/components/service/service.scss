@@ -1,1 +1,44 @@
-
+/*----------------------------------------------------------------
+                        Start service Section
+----------------------------------------------------------------*/
+.service-area {
+  padding-bottom: 9px;
+  }
+.single-service-item {
+  cursor: pointer;
+  margin-top: -30px;
+  margin-bottom: 60px;
+  padding: 20px 40px;
+  }
+.single-service-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+.service-item-icon {
+  border-radius: 50%;
+  display: inline-block;
+  height: 55px;
+  margin-bottom: 10px;
+  width: 55px;
+  }
+.service-item-icon i {
+  color: #3E6482;
+  font-size: 35px;
+  line-height: 55px;
+  }
+.single-service-item:hover .service-item-icon {
+  background: #3E6482;
+  }
+.single-service-item:hover .service-item-icon i {
+  color: #fff;
+  }
+.single-service-item > h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 50px;
+  }
+.single-service-item:hover h3 {
+  color: #3E6482;
+  }
+/*----------------------------------------------------------------
+                        End service Section
+----------------------------------------------------------------*/

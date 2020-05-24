@@ -1,99 +1,97 @@
-// Common styles of the project
-
 /*----------------------------------------------------------------
 					Start Default Settings
 ----------------------------------------------------------------*/
 body{
-    margin: 0;
-    padding: 0;
-    color: #666;
-    font-size: 14px;
-    font-family: 'Raleway', sans-serif;
-}
+  margin: 0;
+  padding: 0;
+  color: #666;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  }
 ul,li{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  }
 a,
 a:hover,
 a:focus,
 input,button,textarea{
-    outline: none;
-    text-decoration: none;
-}
+  outline: none;
+  text-decoration: none;
+  }
 /*----------------------Typography Settings---------------------*/
 h1,h2,h3,h4,h5,h6 {
-    padding: 0;
-    margin: 0;
-}
+  padding: 0;
+  margin: 0;
+  }
 h1 {
-    color: #fff;
-    font-size: 75px;
-    font-weight: 800;
-    line-height: 100px;
-}
+  color: #fff;
+  font-size: 75px;
+  font-weight: 800;
+  line-height: 100px;
+  }
 h2 {
-    color: #3E6482;
-    font-size: 45px;
-    font-weight: 800;
-    line-height: 60px;
-    text-transform: capitalize;
-}
+  color: #3E6482;
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 60px;
+  text-transform: capitalize;
+  }
 h3 {
-    color: #333;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 30px;
-}
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  }
 h5 {
-    color: #fff;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 35px;
-}
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 35px;
+  }
 p {
-    margin: 0;
-    padding: 0;
-    color: #666;
-    font-size: 14px;
-    line-height: 27px;
-}
+  margin: 0;
+  padding: 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 27px;
+  }
 /*--------------------------Spacing CSS-------------------------*/
 .pt-1 {
-    padding-top: 100px;
-}
+  padding-top: 100px;
+  }
 .pb-1 {
-    padding-bottom: 69px;
-}
+  padding-bottom: 69px;
+  }
 .pb-2 {
-    padding-bottom: 36px;
-}
+  padding-bottom: 36px;
+  }
 .pb-3 {
-    padding-bottom: 43px;
-}
+  padding-bottom: 43px;
+  }
 .ptb-1 {
-    padding-top: 77px;
-    padding-bottom: 100px;
-}
+  padding-top: 77px;
+  padding-bottom: 100px;
+  }
 /*-------------------------Alignment CSS------------------------*/
 .text-center {
-    text-align: center;
-}
+  text-align: center;
+  }
 .text-right {
-    text-align: right;
-}
+  text-align: right;
+  }
 /*-------------------------Color Settings-----------------------*/
 .bg-1 {
-    background: #fafafa;
-}
+  background: #fafafa;
+  }
 .bg-2 {
-    background: #3E6482;
-}
+  background: #3E6482;
+  }
 .white {
-    color: #fff;
-    padding-bottom: 17px;
-}
+  color: #fff;
+  padding-bottom: 17px;
+  }
 /*--------------------All Transition Settings-------------------*/
 .logo,
 header.header-area.sticky .logo,
@@ -120,8 +118,8 @@ header.header-area.sticky .logo,
 .blog-img img,.blog-social-link li a i,
 .post-thumbnail > img,.cat-list li a,
 .ftr-social-link ul li a i{
-    transition: all 0.4s linear;
-}
+  transition: all 0.4s linear;
+  }
 /*----------------------------------------------------------------
 					End Default Settings
 ----------------------------------------------------------------*/

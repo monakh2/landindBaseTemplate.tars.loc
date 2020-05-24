@@ -1,3 +1,4 @@
+console.log('Hallo from old JS');
 (function ($) {
 	"use strict";
 

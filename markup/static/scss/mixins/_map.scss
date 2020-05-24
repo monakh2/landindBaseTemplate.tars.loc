@@ -1,0 +1,18 @@
+//Intermediate function for obtaining the value of map
+@function config($map, $key) {
+    @if map_has_key($map, $key) {
+        @return map-get($map, $key);
+    } @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$key}`. "
+         + "Please make sure it is defined in `#{$map}` map.";
+    }
+}
+
+//Function that returns a value of map breakpoints
+@function breakpoints($request) {
+    @return config($_breakpoints, $request);
+}
+/*Usage: @include text-shadow(2, 2, 5, rgba(0,0,0,.4))*/
+@mixin text-shadow($x: 2px, $y: 2px, $blur: 5px, $color: rgba(0,0,0,.4)) {
+    text-shadow: $x $y $blur $color;
+}

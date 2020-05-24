@@ -1,1 +1,29 @@
-
+/*----------------------------------------------------------------
+                        Start facts Section
+----------------------------------------------------------------*/
+.facts-area {
+  padding-top: 86px;
+  padding-bottom: 95px;
+  background: url(%=static=%assets/blog/blog-bg.jpg) no-repeat fixed;
+  background-size: cover;
+  position: relative;
+  }
+.single-facts-item i {
+  color: #fff;
+  font-size: 40px;
+  line-height: 60px;
+  }
+.single-facts-item .counter {
+  color: #fff;
+  font-size: 55px;
+  display: block;
+  font-weight: 800;
+  }
+.single-facts-item h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: capitalize;
+  }
+/*----------------------------------------------------------------
+                        End facts Section
+----------------------------------------------------------------*/

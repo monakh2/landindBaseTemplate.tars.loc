@@ -13,6 +13,7 @@
     "bootstrap": "^3.3.7",
     "breakpoints-js": "^1.0.6",
     "cssnano": "^4.1.10",
+    "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
     "rucksack-css": "^1.0.2",
     "sass-bem-mixins": "^1.1.6",

@@ -1,2 +1,26 @@
 // File for scss-vars.
 // For example: main colors, paddings and so on.
+// map of breakpoints
+$_breakpoints: (
+	'phone': 400px,
+	'phone-wide': 480px,
+	'phablet': 560px,
+	'tablet-small': 640px,
+	'tablet': 768px,
+	'tablet-wide': 1024px,
+	'desktop': 1248px,
+	'desktop-wide': 1440px,
+	//Bootstrap 3.3.7 breakpoints
+	'xs': 480px, //<480px
+	'sm': 768px, //>=480px && <768px
+	'md': 992px, //>=768px && <992px
+	'lg': 1200px, //>992px && <1200px
+);
+
+$color-panache: #F2F7E8;
+
+$color-fun-green: #005931;
+$color-black-pearl: #232D31;
+
+
+$font-family-main: Begum, sans-serif;

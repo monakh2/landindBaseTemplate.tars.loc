@@ -1,1 +1,29 @@
+/*----------------------------------------------------------------
+                        START Header Section
+----------------------------------------------------------------*/
 
+header.header-area {
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  position: fixed;
+  }
+@import "../elements/_logo.scss";
+
+header.header-area.sticky .logo{
+  padding-top: 20px;
+  }
+header.header-area.sticky .logo p{
+  color: #3E6482;
+  }
+
+header.header-area.sticky {
+  position: fixed;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.27);
+  }
+@import "../menu/main-menu";
+	/*----------------------------------------------------------------
+	                        END Header Section
+	----------------------------------------------------------------*/

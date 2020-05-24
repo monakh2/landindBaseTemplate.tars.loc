@@ -1,16 +1,43 @@
+@import "../vars";
+@import "../mixins/index-mixins";
+
+@import "../libraries/index-library";
+
+@import "../plugins/index-plugin";
 @import '../normalize.scss';
 
-/* Libraries, which is used in current project. */
-@import 'partials/_libraries.scss';
+@import "../fonts";
+@import "../common";
+@import "../GUI";
 
-/* Libraries, which is used in current project. */
-@import 'built-in-partials/_service.scss';
 
-/* Plugins, which is used in current project. */
-@import 'partials/_plugins.scss';
 
-/* Components, which is used in current project. */
-@import 'partials/_components.scss';
+@import "components/elements/scroll-top";
+@import "components/elements/section-header";
+@import "components/menu/main-menu";
 
-/* Additional style files. */
-@import '../etc/etc.scss';
+
+@import "components/old/css/style";
+
+@import "components/header/header";
+@import "components/slider/main-slider";
+@import "components/about/about";
+@import "components/feature/feature";
+@import "components/service/service";
+@import "components/facts/facts";
+@import "components/portfolio/portfolio";
+@import "components/pricing/pricing";
+@import "components/expertice/expertice";
+@import "components/team/team";
+@import "components/overview/overview";
+@import "components/testimonial/testimonial";
+@import "components/holder/holder";
+@import "components/partner/partner";
+@import "components/blog/blog";
+@import "components/contact/contact";
+@import "components/footer/footer";
+
+@import "components/example/example";
+
+@import "components/old/css/responsive";
+

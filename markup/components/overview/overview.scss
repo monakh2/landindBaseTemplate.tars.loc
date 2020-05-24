@@ -1,1 +1,64 @@
-
+/*----------------------------------------------------------------
+                        Start Video Overview Section
+----------------------------------------------------------------*/
+.overview-area {
+  padding: 98px 0;
+  }
+.video-sec {
+  position: relative;
+  }
+.video-sec > img {
+  width: 100%;
+  }
+.play-btn {
+  top: 45%;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  position: absolute;
+  text-align: center;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  }
+.play-btn i {
+  color: #fff;
+  font-size: 25px;
+  padding-left: 5px;
+  }
+.video-sec h3 {
+  left: 50%;
+  bottom: 38%;
+  color: #fff;
+  width: 100%;
+  font-size: 25px;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, 0%);
+  }
+.overlay1 {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgba(0,0,0,0.6);
+  }
+.overview-content {
+  padding-top: 23px;
+  padding-left: 50px;
+  }
+.overview-content h3 {
+  color: #3E6482;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 40px;
+  padding-bottom: 20px;
+  }
+.overview-content p {
+  padding-bottom: 40px;
+  }
+/*----------------------------------------------------------------
+                        End Video Overview Section
+----------------------------------------------------------------*/

@@ -1,0 +1,106 @@
+/*----------------------------------------------------------------
+                        Start Slider Section
+----------------------------------------------------------------*/
+/*-------------------Camera Slider Css-------------------*/
+.camera_wrap.main-slider {
+  float: none;
+  }
+.camera_caption {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  }
+/*----------------Only Parallax Banner Css----------------*/
+.banner-area.banner-parallax {
+  background: url(../images/banner.jpg)50% no-repeat fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  }
+/*-----------Particles With Parallax Banner Css-----------*/
+.banner-area.banner-particle{
+  width: 100%;
+  height: 100vh;
+  background: url(../images/banner2.jpg) 50% no-repeat fixed;
+  background-position:50% 50%;
+  background-size: cover;
+  }
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  }
+.banner-area:before {
+  top:  0;
+  left:  0;
+  width:  100%;
+  height:  100%;
+  content:  "";
+  position:  absolute;
+  background: rgba(0,0,0,0.4);
+  }
+.slider-title {
+  width: 100%;
+  height: 100vh;
+  align-items: flex-center;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  }
+.slider-title h1 {
+  z-index: 9;
+  }
+.slider-title span {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 35px;
+  }
+.btn1 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  background: transparent;
+  padding: 0 15px;
+  margin-top: 20px;
+  margin-right: 15px;
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  text-transform: capitalize;
+  }
+.btn1:hover {
+  color: #fff;
+  background: #3E6482;
+  border: 1px solid #3E6482;
+  }
+.btn2 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  background: #3E6482;
+  padding: 0 15px;
+  margin-top: 20px;
+  display: inline-block;
+  border: 1px solid #3E6482;
+  border-radius: 20px;
+  text-transform: capitalize;
+  }
+.btn2:hover {
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  }
+a.btn1, a.btn2, a.btn3, a.btn4, a.btn5 {
+  color: #fff;
+  }
+/*----------------------------------------------------------------
+                        End Slider Section
+----------------------------------------------------------------*/

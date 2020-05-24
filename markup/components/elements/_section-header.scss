@@ -1,0 +1,12 @@
+@include block('sectionTop') {
+  margin:    0 auto;
+  max-width: 550px;
+  @include element('title') {
+	color:       #3E6482;
+	font-weight: 600;
+	font-size: 40px;
+	@include modifier('white') {
+	  color: #FFFFFF;
+	  }
+	}
+  }

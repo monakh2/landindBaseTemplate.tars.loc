@@ -13,7 +13,7 @@ module.exports = {
     ],
     "svg": {
         "active": true,
-        "workflow": "sprite",
+        "workflow": "symbols",
         "symbolsConfig": {
             "loadingType": "inject",
             "usePolyfillForExternalSymbols": true,
@@ -21,17 +21,23 @@ module.exports = {
         }
     },
     "css": {
-        "workflow": "concat"
+        "workflow": "manual"
     },
     "js": {
-        "workflow": "concat",
+        "workflow": "modular",
         "bundler": "webpack",
-        "lint": false,
-        "useBabel": true,
+        "lint": true,
+        "useBabel": false,
         "removeConsoleLog": true,
         "webpack": {
             "useHMR": false,
-            "providePlugin": {}
+            "providePlugin": {
+                // Automtically detect jQuery and $ as free var in modules
+                // and inject the jquery library
+                // This is required by many jquery plugins
+                // jQuery: "jquery/dist/jquery",
+                // $: "jquery/dist/jquery"
+            }
         },
         "jsPathsToConcatBeforeModulesJs": [],
         "lintJsCodeBeforeModules": false,
