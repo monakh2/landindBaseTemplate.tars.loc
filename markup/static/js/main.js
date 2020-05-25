@@ -7,4 +7,4 @@
 // const $ = require('jquery/dist/jquery');
 // const app = require('components/js/app');
 
-const app = require('components/old/old');
+const app = require('components/js/app');
